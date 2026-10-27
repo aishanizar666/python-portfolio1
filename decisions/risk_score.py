@@ -1,7 +1,5 @@
-
 # risk_score.py
 # Calculate a login risk score from three security factors.
-
 score = 0
 
 failed = int(input("Failed attempts in the last hour: "))

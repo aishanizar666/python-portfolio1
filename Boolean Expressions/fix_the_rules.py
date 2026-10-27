@@ -1,8 +1,7 @@
-# fix_the_rules
-
+# fix_the_rules.py - Fixes errors in connection security rules.
 role = input("Role: ")
 
-# convert the port input to int
+# Runtime error: convert the input to int before comparing it with an integer.
 port = int(input("Port: "))
 
 # Semantic compare role using == not = 

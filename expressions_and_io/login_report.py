@@ -1,3 +1,4 @@
+# login_report.py - Displays a user's login attempts report.
 MAX_LOGIN_ATTEMPTS = 5
 
 username = input("Username: ")

@@ -1,3 +1,4 @@
+# port_facts.py - Calculates port and IPv4 address ranges using bit lengths.
 # RFC 9293: https://www.rfc-editor.org/rfc/rfc9293
 # RFC 791: https://www.rfc-editor.org/rfc/rfc791
 

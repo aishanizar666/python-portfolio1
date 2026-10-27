@@ -1,3 +1,4 @@
+# session_timer.py - Converts seconds into minutes and remaining seconds.
 seconds = int(input("enter the number of seconds : "))
 
 mn = seconds//60

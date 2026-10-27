@@ -1,5 +1,4 @@
-
-# login_decision
+# login_decision.py - Checks login credentials and account lock status.
 
 MAX_FAILED = 5
 KNOWN_USER = "analyst"

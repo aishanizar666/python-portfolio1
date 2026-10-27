@@ -1,6 +1,5 @@
 
-# fix_the_policy.py
-
+# fix_the_policy.py - Fixes password policy validation and length classification.
 MIN_LENGTH = 12
 
 username = input("Username: ")

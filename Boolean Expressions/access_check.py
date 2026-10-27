@@ -1,5 +1,4 @@
-# access_check
-
+# access_check.py - Checks MFA, privileged roles, and login eligibility.
 MAX_FAILED = 5
 
 role = input("Role: ")

@@ -8,6 +8,6 @@ minutes = total_seconds // 60
 seconds = total_seconds % 60
 
 print("=" * 30)
-print("User: {username}")
+print(f"User: {username}")
 print("Session: " + str(minutes) + " min " + str(seconds) + " s")
 print("=" * 30)

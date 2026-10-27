@@ -1,4 +1,4 @@
-# truth_research
+# truth_research.py - Tests and explains Python truth values.
 # https://docs.python.org/3/library/stdtypes.html#truth-value-testing
 
 # False: An empty string is falsy.

@@ -1,35 +1,37 @@
-# conditional_test
-A = "first"
-B = "second"
-num = 3
-n = 22
 
-print("Is num >= 3? I predict True.")
-print(num >= 3)
+# conditional_tests.py - Predicts and tests ten Boolean expressions.
 
-print("\nIs n == 22? I predict True.")
-print(n == 22)
+user = "analyst"
+role = "viewer"
+failed = 3
+port = 22
 
-print("\nIs B != 'admin'? I predict True.")
-print(B != "admin")
+print("Is failed >= 3? I predict True.")
+print(failed >= 3)
 
-print("\nIs num > 2? I predict True.")
-print(num > 2)
+print("\nIs port == 22? I predict True.")
+print(port == 22)
 
-print("\nIs num <= 3 and n < 100? I predict True.")
-print(num <= 3 and n < 100)
+print("\nIs role != 'admin'? I predict True.")
+print(role != "admin")
 
-print("\nIs B == 'admin'? I predict False.")
-print(B == "admin")
+print("\nIs failed > 2? I predict True.")
+print(failed > 2)
 
-print("\nIs n > 1023? I predict False.")
-print(n > 1023)
+print("\nIs failed <= 3 and port < 100? I predict True.")
+print(failed <= 3 and port < 100)
 
-print("\nIs num < 3? I predict False.")
-print(num < 3)
+print("\nIs role == 'admin'? I predict False.")
+print(role == "admin")
 
-print("\nIs B == 'root' or n == 80? I predict False.")
-print(B == "root" or n == 80)
+print("\nIs port > 1023? I predict False.")
+print(port > 1023)
 
-print("\nIs not (A == 'first')? I predict False.")
-print(not (A == "first"))
+print("\nIs failed < 3? I predict False.")
+print(failed < 3)
+
+print("\nIs role == 'root' or port == 80? I predict False.")
+print(role == "root" or port == 80)
+
+print("\nIs not (user == 'analyst')? I predict False.")
+print(not (user == "analyst"))
