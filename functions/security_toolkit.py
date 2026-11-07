@@ -14,6 +14,7 @@ def show_box(text):
     print('| ' + text + ' |')
     border(len(text))
 
+
 def port_range(port):
     """Return the category of a port number."""
     if port < 0 or port > 65535:
@@ -30,14 +31,17 @@ def check_port():
     """Ask for a port and display its category."""
     port = int(input("Port: "))
     show_box("Port " + str(port) + ": " + port_range(port))
+
+
 def password_problem(password,username):
     """Return the first password problem, or an empty string."""
     if len(password)<MIN_LENGTH :
-        return "Too short"
+        return "too short"
     elif password == username:
         return "same as the username"
     else :
         return ""
+
 
 def check_password():
     """Ask for credentials and display the password result."""
@@ -53,13 +57,45 @@ def check_password():
 
     show_box(answer)
 
-def days_to_guess(digits,per_second):
-    """this function is calculating the number of dayes to guss a pin number of variable number of digites"""
-    return 10**digits // (per_second*86400)
 
-def chead_pin():
-    dig = int(input("PIN digites: "))
-    GPS = int(input("Guesses per second : "))
-    result = str(dig)+" digites: "+str(days_to_guess(dig,GPS)) +" days"
+def days_to_guess(digits, per_second):
+    """Return the number of full days needed to guess a PIN."""
+    return 10 ** digits // (per_second * 86400)
+
+
+
+def check_pin():
+    """Ask for PIN details and display the guessing time."""
+    digits = int(input("PIN digits: "))
+    per_second = int(input("Guesses per second: "))
+
+    days = days_to_guess(digits, per_second)
+    result = str(digits) + " digits: " + str(days) + " days"
+
     show_box(result)
-chead_pin()
+
+
+def show_menu():
+    """Display the security toolkit menu."""
+    print("SECURITY TOOLKIT\n1. Check a port\n2. Check a password\n3. PIN guessing time\nq. Quit")
+
+
+show_menu()
+checks = 0
+while True:
+    choice = input("Choice (1,2,3,or q) : ")
+    if choice == '1':
+        check_port()
+        checks+=1
+    elif choice == '2':
+        check_password()
+        checks+=1
+    elif choice== '3' :
+        check_pin()
+        checks+=1
+    elif choice == 'q':
+        show_box(f"Checks done: {checks}")
+        break
+    else : 
+        print("Unknown choice.")
+    
